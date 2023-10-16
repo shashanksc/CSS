@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    
+   
+    <!-- external CSS 
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css">
+    -->
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #673ab7;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        header:hover {
+            background-color: #7145bd;
+        }
+
+        main {
+            height: 100vh; 
+            width: 100vw; 
+            font-size: large;
+        }
+
+        section{
+
+            width: 80%;
+            max-width: 650px;
+            position: relative;
+            top: 50px;
+            text-align: center;
+            padding: 20px;
+            margin: 25px auto;
+            background-color: white;
+            border: 2px solid #673ab7;
+            border-radius: 10px;
+            animation: shine 3s infinite;
+            padding: 10px;
+        }
+        section:hover{
+            text-decoration-color: #673ab7;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li:hover{
+            font-weight: bold;
+            color: #673ab7;
+        }
+        h2{
+            color: #673ab7;
+        }
+        footer {
+            background-color: #673ab7;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer:hover{
+            background-color: #7145bd;
+        }
+        @keyframes shine{
+            0%{
+                border-color: #673ab7;
+                box-shadow: 0 0 5px #673ab7;
+            }
+            50%{
+                border-color: #7a56ba;
+                box-shadow: 0 0 5px #a98bdc;
+            }
+            100%{
+                border-color: #673ab7;
+                box-shadow: 0 0 5px #673ab7;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Page</h1>
+    </header>
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                Hello, World! I love coding. I am here to learn CSS.
+            </p>
+        </section>
+        <section class="interest">
+            <h2>My Interests</h2>
+            <ul>
+                <li>Reading books</li>
+                <li>Coding</li>
+                <li>Travel</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
